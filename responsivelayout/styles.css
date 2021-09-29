@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    height: 100vh; 
+    margin: 10px;
+    font-family: "CustomFont";
+    font-size: 40px;
+}
+.sub-container{
+    display: flex;
+    
+    
+}
+.blue-container{
+    display: flex;
+    
+}
+.white-container{
+    display: flex;
+    
+}
+.orange{
+    height: 100px;
+    width: 50%;
+    background-color: orange;
+    margin: 5px;
+    transition: width2s;
+}
+.orange:hover{
+    width: 20%;
+
+}
+.green{
+    height: 250px;
+    width: auto;
+    background-color: rgb(135, 228, 135);
+    margin: 5px; 
+    
+}
+.green:hover
+{
+    transform: rotate(20deg);
+    
+}
+.blue{
+    height: 150px;
+    background-color: blue;
+    margin: 5px;
+    flex-grow: 1;
+    transition: width2s;
+}
+.blue:hover{
+    width: 15%;
+}
+.white{
+    height: 100px;
+    flex-grow: 1;
+    background-color: rgb(179, 167, 167);
+    margin: 5px;
+}
+.white:hover{
+    transform: rotate(15deg);
+}
+/* responsive prooperties under 320px screen*/
+@font-face {
+    font-family: "CustomFont";
+    src: url("GreatVibes-Regular.otf") format("opentype");
+    font-size: 30px;
+    }
+.icon1,.icon2,.icon3,.icon4,.icon5{
+    display: inline-block;
+    width: 35px;
+    height:35px
+
+}
+.icon1{
+    background: url(spriteimage.svg) -56px -12px ;
+
+}
+.icon2{
+    background: url(spriteimage.svg) -101px -10px ;
+
+}
+.icon3{
+    background: url(spriteimage.svg) -153px -9px ;
+
+}
+.icon4{
+    background: url(spriteimage.svg) -201px -9px ;
+
+}
+.icon5{
+    background: url(spriteimage.svg) -239px -8px ;
+
+}
+@media screen and (max-width: 320px){
+    .sub-container{
+        display: block;
+    }
+    .white-container{
+        display: block;
+    }
+    .orange{
+        width: auto;
+        height: 50px;
+    }
+    .green{
+        width: auto;;
+        height: 100px;
+    }
+    .white{
+        width: auto;
+        height: 50px;
+    }
+    .blue{
+        width: auto;
+        height: 150px;
+    }
+}
+
+/* responsive prooperties under 768px screen*/
+
+@media screen and (min-width: 321px) and (max-width: 768px){
+    .sub-container{
+        display: block;
+    }
+    .white-container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .orange{
+        width: auto;
+        height: 50px;
+    }
+    .green{
+        width: auto;
+        height: 150px;
+    }
+    .white{
+        
+        height: 90px;
+    }
+    .blue{
+        width: auto;
+        height: 50px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .white-container{
+        margin-bottom: 10px;
+    }
+}
