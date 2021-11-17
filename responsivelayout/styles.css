@@ -6,7 +6,6 @@
 .container{
     height: 100vh; 
     margin: 10px;
-    font-family: "CustomFont";
     font-size: 40px;
 }
 .sub-container{
@@ -35,7 +34,6 @@
 }
 .green{
     height: 250px;
-    width: auto;
     background-color: rgb(135, 228, 135);
     margin: 5px; 
     
